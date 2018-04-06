@@ -1,0 +1,27 @@
+<!-- Generated template for the QuotationListComponent component -->
+<ion-card *ngFor="let key of newData">
+  <ion-row>
+    <h1>Quotation:{{ key.quotation}}</h1>
+  </ion-row>
+    <ion-row> 
+  <p>date of issue:{{key.date}} &nbsp; </p>
+  
+  <p>premium:{{key.premium}}</p>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left clear small>
+            <ion-icon name="download"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-left clear small>
+            <ion-icon name="create"></ion-icon>
+        </button>
+      </ion-col>
+
+      <ion-col center text-center>
+          <ion-icon name="trash"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-card>
